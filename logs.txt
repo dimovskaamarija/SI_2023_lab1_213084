@@ -1,0 +1,44 @@
+$ git logs
+git: 'logs' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+win10pro@MD10052002 MINGW64 ~/SI_2023_lab1_213084 (master)
+$ git log
+commit b830733072f56bb833902ea2a28cbfdc49cfd97c (HEAD -> master, origin/master, bug3)
+Author: Marija <marija-dimoska@live.com>
+Date:   Fri Mar 31 01:15:50 2023 +0200
+
+    Fix method sumEvenNumbers.
+
+commit 3fb3817c4206d49a9f4e2861b79b23fc070bf509
+Merge: 8f814e1 ce66c38
+Author: Marija <marija-dimoska@live.com>
+Date:   Fri Mar 31 01:22:51 2023 +0200
+
+    Merge branch 'bug2'
+
+commit ce66c3824288a659a3f9972f6fe5de960ae62d69 (origin/bug2, bug2)
+Author: Marija <marija-dimoska@live.com>
+Date:   Fri Mar 31 01:14:16 2023 +0200
+
+    Fix wrong condition in filterOddNumbers.
+
+commit 8f814e11921c46117c640dfdce0edc4099b5dcbc (origin/bug1, bug1)
+Author: Marija <marija-dimoska@live.com>
+Date:   Fri Mar 31 01:11:58 2023 +0200
+
+    Fix wrong loop for reading.
+
+commit e1e8e818c2deb5d5d1da42fa52a78f9755788065
+Author: Marija <marija-dimoska@live.com>
+Date:   Fri Mar 31 01:00:56 2023 +0200
+
+    Add java class
+
+commit 89dee88e8544d4fd384c19cacaf774eab04536d5
+Author: Marija <marija-dimoska@live.com>
+Date:   Fri Mar 31 00:57:30 2023 +0200
+
+     initial commit
