@@ -1,0 +1,61 @@
+
+4. Локален репозиториум креираме со следните команди во Git:
+ mkdir SI_2023_lab1_213084 го креираме директориумот
+ cd SI_2023_lab1_213084 влегуваме во директориумот
+ git init креиран директориум да е git local repo, а не обичен фолдер
+5. Локалниот репозиториум со оддалечениот се поврзува на следниот начин:
+ git remote add origin https://github.com/dimovskaamarija/SI_2023_lab1_213084.git
+6. Додадете README.md file на следниов начин:
+nano README.md
+Во прозорецот што ќе се отвори пишувам Marija Dimovska, 213084
+Кликам ctrl+c, ctrl+x и Y.
+git add README.md
+git commit -m "Initial commit"
+7. Додавам фајл SILab1.java  на следниов начин:
+nano SILab1.java
+Во прозорецот што се отвори правам paste на Java кодот, па кликам ctrl+c, ctrl+x и Y.
+Па додавам со git add SILab1.java. Пишувам порака со следната команда: git commit -m "Add java class".
+8. Ја користам командата: git push origin master.
+9. Треба да креираме три гранки bug1, bug2, bug3.
+Прво одам на master со командата: git checkout master, па ја креирам гранката bug 1 на следниов начин: git checkout -b bug1. Ова го правам и за другите две: 
+git checkout master
+git checkout -b bug2
+па
+git checkout master
+git checkout -b bug3.
+10. Се префрлам на првата гранка со: git checkout bug1.
+11. Ја отварам класата со nano SILab1.java. Поправам грешката во циклусот па Кликам ctrl+c, ctrl+x и Y. 
+Додавам со git add SILab1.java и правам git commit -m "Fix wrong loop for reading.".
+12. Се префрлам на втората гранка со: git checkout bug2.
+13. Ја отварам класата со nano SILab1.java. Поправам грешката во методот filterOddNumbers па Кликам ctrl+c, ctrl+x и Y. 
+Додавам со git add SILab1.java и правам git commit -m "Fix wrong condition in filterOddNumbers".
+14. Се префрлам на третата гранка со: git checkout bug3.
+15. Ја отварам класата со nano SILab1.java. Поправам грешката во методот sumEvenNumbers па Кликам ctrl+c, ctrl+x и Y. 
+Додавам со git add SILab1.java и правам git commit -m "Fix method sumEvenNumbers".
+16. Ги синхронизирам со: 
+git push origin bug3
+се префрлам на гранка 2:
+git checkout bug2
+git push origin bug2
+се префрлам на гранка 1:
+git checkout bug1
+git push origin bug1
+17. Се префрлам на гранка master:
+git checkout master
+18. Ja спојувам со: git merge bug1.
+19. Се префрлам на првата гранка со: git checkout bug1 па синхронизирам со git push origin bug1.
+20. Прво се префрлам на master: git checkout master па спојувам   git merge bug2.
+21.Се префрлам на втората гранка со: git checkout bug2 па синхронизирам со git push origin master.
+22. Се префрлам на третата гранка со: git checkout bug3.
+23. Rebase правам со: 
+git fetch
+git rebase master
+24. Се префрлам на master со: git checkout master.
+25. Спојувам со git merge bug3.
+26. Kористам команда git push origin master.
+27. Прво правам git log и добиените резултати(логови) ги копирам. Креирам датотека со nano logs.txt и во прозорецот што ќе се отвори ја лепам копираната содржина. Кликам ctrl+c, ctrl+x и Y. Правам 213084.txt на истиов начин со nano 213084.txt.
+
+
+
+
+ 
